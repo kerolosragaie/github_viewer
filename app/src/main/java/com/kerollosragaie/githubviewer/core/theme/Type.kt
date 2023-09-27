@@ -1,4 +1,4 @@
-package com.kerollosragaie.githubviewer.ui.theme
+package com.kerollosragaie.githubviewer.core.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
