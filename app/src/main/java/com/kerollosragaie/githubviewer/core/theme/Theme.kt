@@ -1,4 +1,4 @@
-package com.kerollosragaie.githubviewer.ui.theme
+package com.kerollosragaie.githubviewer.core.theme
 
 import android.app.Activity
 import android.os.Build
