@@ -7,7 +7,7 @@
 
 ## Description
 
-A native android app that allows users to view repositories from GitHub, using Compose, view-model, Dagger-Hilt, Navigation graph and much more...
+A native android app that allows users to view repositories from GitHub, using Compose, view-model, Dagger-Hilt, Navigation graph, Paging 3 for pagination and much more...
 
 ## Instructions
 
