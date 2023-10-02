@@ -1,5 +1,6 @@
 package com.kerollosragaie.githubviewer.di
 
+import com.kerollosragaie.githubviewer.core.utils.Constants.BASE_URL
 import com.kerollosragaie.githubviewer.features.github_repositories.data.remote.api.RemoteServices
 import com.kerollosragaie.githubviewer.features.github_repositories.data.remote.data_source.RemoteDataSource
 import com.kerollosragaie.githubviewer.features.github_repositories.data.remote.data_source.RemoteDataSourceImpl
@@ -29,7 +30,7 @@ object RemoteModule {
     @Provides
     @Singleton
     fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit = Retrofit.Builder()
-        .baseUrl("https://api.github.com/")
+        .baseUrl(BASE_URL)
         .client(okHttpClient)
         .addConverterFactory(GsonConverterFactory.create())
         .build()

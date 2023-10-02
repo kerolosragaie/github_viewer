@@ -1,5 +1,6 @@
 package com.kerollosragaie.githubviewer.features.github_repositories.presentation.screens.main.components
 
+import android.content.res.Configuration
 import androidx.compose.animation.core.AnimationSpec
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.animation.core.tween
@@ -20,7 +21,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.kerollosragaie.githubviewer.R
+import com.kerollosragaie.githubviewer.core.theme.GitHubViewerTheme
 
 @Composable
 fun ThemeSwitcher(
@@ -91,5 +94,24 @@ fun ThemeSwitcher(
                 )
             }
         }
+    }
+}
+
+
+@Preview(
+    name = "Day Mode",
+    uiMode = Configuration.UI_MODE_NIGHT_NO,
+)
+@Preview(
+    name = "Night Mode",
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
+@Composable
+fun ThemeSwitcherPreview() {
+    GitHubViewerTheme {
+        ThemeSwitcher(
+            size = 40.dp,
+            padding = 5.dp,
+        )
     }
 }

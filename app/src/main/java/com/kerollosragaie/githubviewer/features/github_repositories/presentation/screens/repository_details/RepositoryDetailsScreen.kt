@@ -97,14 +97,14 @@ fun RepoDetailsLazyColumn(
                     )
                 }
                 Spacer(modifier = Modifier.height(10.dp))
-                ShowInfo("Owner", "${repoDetails.ownerModel!!.login}")
-                ShowInfo("Watchers", "${repoDetails.watchersCount}")
-                ShowInfo("Forks", "${repoDetails.forksCount}")
-                ShowInfo("Subscribers", "${repoDetails.subscribersCount}")
-                ShowInfo("Created at", extractDate(repoDetails.createdAt))
-                ShowInfo("Updated at", extractDate(repoDetails.updatedAt))
-                ShowInfo("URL", "${repoDetails.url}")
-                ShowInfo("Description", "${repoDetails.description}")
+                ShowInfo(stringResource(R.string.owner), "${repoDetails.ownerModel!!.login}")
+                ShowInfo(stringResource(R.string.watchers), "${repoDetails.watchersCount}")
+                ShowInfo(stringResource(R.string.forks), "${repoDetails.forksCount}")
+                ShowInfo(stringResource(R.string.subscribers), "${repoDetails.subscribersCount}")
+                ShowInfo(stringResource(R.string.created_at), extractDate(repoDetails.createdAt))
+                ShowInfo(stringResource(R.string.updated_at), extractDate(repoDetails.updatedAt))
+                ShowInfo(stringResource(R.string.url), "${repoDetails.url}")
+                ShowInfo(stringResource(R.string.description), "${repoDetails.description}")
                 Spacer(modifier = Modifier.height(30.dp))
                 Button(
                     onClick = {
@@ -136,7 +136,7 @@ fun RepoDetailsLazyColumn(
 fun RepositoryDetailsScreenPreview() {
     GitHubViewerTheme {
         RepositoryDetailsScreen(
-            callbackParams = { _, _ ->}
+            callbackParams = { _, _ -> }
         )
     }
 }

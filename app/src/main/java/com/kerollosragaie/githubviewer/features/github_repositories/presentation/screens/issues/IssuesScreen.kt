@@ -1,4 +1,4 @@
-package com.kerollosragaie.githubrepoviewer.features.github_repositories.presentation.screens.issues
+package com.kerollosragaie.githubviewer.features.github_repositories.presentation.screens.issues
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement

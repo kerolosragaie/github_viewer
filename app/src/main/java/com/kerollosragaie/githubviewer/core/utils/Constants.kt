@@ -1,10 +1,13 @@
 package com.kerollosragaie.githubviewer.core.utils
 
 object Constants {
+    //API
+    const val BASE_URL = "https://api.github.com/"
+
     //Screens names
-    const val MAIN_SCREEN="main_screen"
-    const val REPO_DETAILS_SCREEN="repo_details_screen"
-    const val ISSUES_SCREEN="issues_screen"
+    const val MAIN_SCREEN = "main_screen"
+    const val REPO_DETAILS_SCREEN = "repo_details_screen"
+    const val ISSUES_SCREEN = "issues_screen"
 
     //Screens args:
     const val USER_NAME_ARGUMENT_KEY = "userName"

@@ -8,5 +8,13 @@
     <string name="state">"State"</string>
     <string name="star">"Star"</string>
     <string name="search">"Search"</string>
+    <string name="owner">"Owner"</string>
+    <string name="watchers">"Watchers"</string>
+    <string name="forks">"Forks"</string>
+    <string name="subscribers">"Subscribers"</string>
+    <string name="created_at">"Created at"</string>
+    <string name="updated_at">"Updated at"</string>
+    <string name="url">URL</string>
+    <string name="description">"Description"</string>
     <string name="no_data_found">"No data found, please try again later."</string>
 </resources>
