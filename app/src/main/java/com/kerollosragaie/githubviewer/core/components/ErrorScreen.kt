@@ -1,5 +1,6 @@
 package com.kerollosragaie.githubviewer.core.components
 
+import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -37,6 +38,7 @@ fun ErrorScreen(
             Text(
                 text = title ?: stringResource(id = R.string.error),
                 style = MaterialTheme.typography.titleLarge,
+                color = MaterialTheme.colorScheme.error,
                 textAlign = TextAlign.Center
             )
             Spacer(modifier = Modifier.height(20.dp))
@@ -58,15 +60,19 @@ fun ErrorScreen(
     }
 }
 
-@Preview(showBackground = true)
+@Preview(
+    name = "Night Mode",
+    uiMode = Configuration.UI_MODE_NIGHT_YES,
+)
+@Preview(
+    name = "Day Mode",
+    uiMode = Configuration.UI_MODE_NIGHT_NO,
+)
 @Composable
 fun ErrorScreenPreview() {
     GitHubViewerTheme() {
         ErrorScreen(
             message = "Error",
-            retryFunc = {
-
-            }
         )
     }
 }
