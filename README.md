@@ -19,3 +19,15 @@ To build and run the app, follow these steps:
 ## Testing
 
 ## Screenshots
+
+1- The app has search functionality and can handle errors.
+
+<img src="preview/show_1.gif" width="300" height="560"/>
+
+2- Handled pagingation with Room in the main screen and with Retrofit in the issues screen using Paging 3.
+
+<img src="preview/show_2.gif" width="300" height="560"/>
+
+3- The application supports both light and dark modes.
+
+<img src="preview/show_3.gif" width="300" height="560"/>
