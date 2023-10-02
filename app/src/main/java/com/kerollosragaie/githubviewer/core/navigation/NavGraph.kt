@@ -6,7 +6,7 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.kerollosragaie.githubrepoviewer.features.github_repositories.presentation.screens.issues.IssuesScreen
+import com.kerollosragaie.githubviewer.features.github_repositories.presentation.screens.issues.IssuesScreen
 import com.kerollosragaie.githubviewer.features.github_repositories.presentation.screens.main.MainScreen
 import com.kerollosragaie.githubviewer.features.github_repositories.presentation.screens.repository_details.RepositoryDetailsScreen
 import com.kerollosragaie.githubviewer.core.utils.Constants.REPO_NAME_ARGUMENT_KEY
