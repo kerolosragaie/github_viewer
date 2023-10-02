@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [Description](#description)
-- [Instructions](instructions)
+- [Instructions](#instructions)
 - [Screenshots](#screenshots)
 
 ## Description
