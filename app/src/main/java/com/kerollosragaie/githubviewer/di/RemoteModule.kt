@@ -1,6 +1,8 @@
 package com.kerollosragaie.githubviewer.di
 
-import com.kerollosragaie.githubviewer.features.GithubRepositories.data.remote.RemoteServices
+import com.kerollosragaie.githubviewer.features.github_repositories.data.remote.api.RemoteServices
+import com.kerollosragaie.githubviewer.features.github_repositories.data.remote.data_source.RemoteDataSource
+import com.kerollosragaie.githubviewer.features.github_repositories.data.remote.data_source.RemoteDataSourceImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -36,4 +38,9 @@ object RemoteModule {
     @Singleton
     fun provideRemoteServices(retrofit: Retrofit): RemoteServices =
         retrofit.create(RemoteServices::class.java)
+
+    @Provides
+    @Singleton
+    fun provideRemoteDataSource(remoteServices: RemoteServices): RemoteDataSource =
+        RemoteDataSourceImpl(remoteServices)
 }

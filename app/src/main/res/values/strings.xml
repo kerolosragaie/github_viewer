@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">GitHub Viewer</string>
+    <string name="unknown">unknown</string>
+    <string name="view_issues">View Issues</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+    <string name="something_wrong">"Something went wrong!"</string>
+    <string name="state">"State"</string>
+    <string name="star">"Star"</string>
+    <string name="search">"Search"</string>
+    <string name="no_data_found">"No data found, please try again later."</string>
 </resources>

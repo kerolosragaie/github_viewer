@@ -17,7 +17,7 @@
         android:theme="@style/Theme.GitHubViewer"
         tools:targetApi="31">
         <activity
-            android:name=".features.GithubRepositories.presentation.screens.Main.MainActivity"
+            android:name=".features.github_repositories.presentation.screens.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.GitHubViewer">
