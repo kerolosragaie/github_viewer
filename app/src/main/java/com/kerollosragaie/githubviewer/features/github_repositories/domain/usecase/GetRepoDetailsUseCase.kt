@@ -5,9 +5,8 @@ import com.kerollosragaie.githubviewer.features.github_repositories.domain.repo.
 import com.kerollosragaie.githubviewer.core.utils.ResultState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
 
-class GetRepoDetailsUseCase @Inject constructor(private val gitHubRepo: GitHubRepo) {
+class GetRepoDetailsUseCase(private val gitHubRepo: GitHubRepo) {
     suspend operator fun invoke(ownerName: String, repoName: String)
             : ResultState<ResponseRepoDetailsModel> =
         withContext(Dispatchers.IO) {

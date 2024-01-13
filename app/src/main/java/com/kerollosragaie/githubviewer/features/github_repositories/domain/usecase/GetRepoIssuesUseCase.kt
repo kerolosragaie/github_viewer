@@ -7,9 +7,8 @@ import com.kerollosragaie.githubviewer.core.utils.ResultState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
 
-class GetRepoIssuesUseCase @Inject constructor(private val gitHubRepo: GitHubRepo) {
+class GetRepoIssuesUseCase(private val gitHubRepo: GitHubRepo) {
     suspend operator fun invoke(
         ownerName: String,
         repoName: String
